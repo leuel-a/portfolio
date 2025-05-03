@@ -21,7 +21,7 @@ jobs:
 
         uses: action/checkout@v4
 
-        run: echo "the ${{ github.repository }} repository has been cloned to the runner"
+      - run: echo "the ${{ github.repository }} repository has been cloned to the runner"
 
       - name: List files in the repository
         
