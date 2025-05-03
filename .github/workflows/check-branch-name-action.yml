@@ -1,0 +1,28 @@
+name: Check the Branch Name
+
+run-name: Check the branch --> ${{ github.repository }} follows naming rules.
+
+on:
+  pull_request:
+    type: [opened]
+
+description: 'Checks the branch name, only branch names that start with refactor/, bugfix/, hotfix/, or feature/ are allowed'
+
+jobs:
+  check-branch-name-is-valid:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get branch name
+        run: echo "Branch name is ${{ github.ref_name }}"
+
+      - name: Validate branch name
+        run: |
+          BRANCH_NAME="${{ github.ref_name }}"
+
+          if [[ ! "$BRANCH_NAME" =~ ^(feature|bugfix|hotfix)/[a-z0-9._-]+$ ]]; the
+            echo ":( Invalid branch name: $BRANCH_NAME"
+            exit 1
+          else
+            echo ":) Branch name is valid: $BRANCH_NAME"
+          fi
+
