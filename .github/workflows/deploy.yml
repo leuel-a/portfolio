@@ -19,7 +19,7 @@ jobs:
 
       - name: Checkout repository code
 
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
 
       - run: echo "the ${{ github.repository }} repository has been cloned to the runner"
 
