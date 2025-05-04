@@ -6,7 +6,7 @@ on:
   pull_request:
     type: [opened, reopened]
 
-description: 'Checks the branch name, only branch names that start with refactor/, bugfix/, hotfix/, or feature/ are allowed'
+description: 'Checks the branch name, only branch names that start with bugfix/, hotfix/, or feat/ are allowed'
 
 jobs:
   check-branch-name-is-valid:
@@ -22,7 +22,7 @@ jobs:
         run: |
           BRANCH_NAME="${{ github.head_ref }}"
 
-          if [[ ! $BRANCH_NAME =~ ^(feature|bugfix|hotfix)/[a-z0-9._-]+$ ]]; then
+          if [[ ! $BRANCH_NAME =~ ^(feat|bugfix|hotfix)/[a-z0-9._-]+$ ]]; then
             echo ":( Invalid branch name: $BRANCH_NAME"
             exit 1
           else
