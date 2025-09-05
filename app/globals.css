@@ -18,6 +18,15 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme inline {
+    --font-obritron-sans: var(--font-orbitron);
+
+    --color-very-dark-blue: var(--ecommerce-very-dark-blue);
+    --color-dark-grayish-blue: var(--ecommerce-dark-grayish-blue);
+    --color-very-dark-blue: var(--ecommerce-very-dark-blue);
+    --color-dark-grayish-blue: var(--ecommerce-dark-grayish-blue);
+}
+
 /* Challenges Custom Tailwind Variables */
 @theme inline {
     --font-kumbh-sans: var(--font-kumbh-sans);
