@@ -8,7 +8,7 @@ import {useIsMobile} from '@/hooks/use-mobile';
 
 export function Header() {
     const isMobile = useIsMobile();
-    const [headerOpen, setHeaderOpen] = useState<boolean>(!!isMobile); // TODO: extract this to its own hook for more usability
+    const [headerOpen, setHeaderOpen] = useState<boolean>(!!isMobile);
 
     const toggleHeader = () => setHeaderOpen((prev) => !prev);
     return (
@@ -21,7 +21,7 @@ export function Header() {
             </button>
             <nav
                 className={cn(
-                    'fixed top-0 right-0 bottom-0 w-4/6 bg-white/5 px-4 py-20 pr-10 md:static md:p-0 md:pl-10',
+                    'fixed top-0 right-0 bottom-0 w-4/6 bg-white/5 px-4 py-20 pr-10 md:static md:p-0 md:pl-10 z-10',
                     'transition-transform duration-500 ease-in-out md:transition-none',
                     isMobile ? (headerOpen ? 'translate-x-0' : 'translate-x-full') : '',
                 )}
