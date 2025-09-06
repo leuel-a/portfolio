@@ -1,7 +1,7 @@
 import {Separator} from '@/components/ui/separator';
 import {IconsMarquee} from '@/components/pages/home/icons-marquee';
 import {ClickActions} from '@/components/pages/home/click-actions';
-import { Experiences } from '@/components/pages/home/experiences';
+import {Experiences} from '@/components/pages/home/experiences';
 
 export default function Home() {
     return (
@@ -19,7 +19,7 @@ export default function Home() {
             <Separator className="my-10 h-1" />
             <div>
                 <h2 className="text-2xl font-semibold tracking-tighter">Experience</h2>
-                <Experiences/>
+                <Experiences />
             </div>
         </div>
     );

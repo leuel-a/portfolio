@@ -5,7 +5,7 @@ import {UPWORK_PROFILE_LINK} from '@/config/constants';
 
 export function ClickActions() {
     return (
-        <div className="flex h-8 gap-2 md:h-12 flex-col md:gap-4 md:flex-row">
+        <div className="flex h-10 flex-col gap-2 md:h-12 md:flex-row md:gap-4">
             <Button className="group h-full cursor-pointer space-x-2 border border-green-500 bg-green-500 hover:bg-green-500/80" asChild>
                 <Link href={UPWORK_PROFILE_LINK} target="_blank">
                     <span>Hire me on Upwork</span>
