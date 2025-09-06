@@ -2,52 +2,82 @@
 @import "tw-animate-css";
 
 :root {
-    /* 01_ECOMMERCE_PRODUCT_PAGE-[Challenges] */
-    --ecommerce-primary-orange: hsl(26, 100%, 55%);
-    --ecommerce-primary-pale-orange: hsl(25, 100%, 94%);
+    /* Primary Colors */
+    --very-dark-blue: hsl(220, 13%, 13%);
 
-    /* Neutral Colors */
-    --ecommerce-very-dark-blue: hsl(220, 13%, 13%);
-    --ecommerce-dark-grayish-blue: hsl(219, 9%, 45%);
-    --ecommerce-grayish-blue: hsl(220, 14%, 75%);
-    --ecommerce-light-grayish-blue: hsl(223, 64%, 98%);
-    --ecommerce-white: hsl(0, 0%, 100%);
-    /* with 75% opacity for lightbox background */
-    --ecommerce-black: hsl(0, 0%, 0%);
+    --dark-grayish-blue: hsl(219, 9%, 45%);
+
+    --grayish-blue: hsl(220, 14%, 75%);
+
+    ---grayish-blue: hsl(223, 64%, 98%);
+
+    /* Sidebar Colors */
+    --sidebar: hsl(0 0% 98%);
+
+    --sidebar-foreground: hsl(240 5.3% 26.1%);
+
+    --sidebar-primary: hsl(240 5.9% 10%);
+
+    --sidebar-primary-foreground: hsl(0 0% 98%);
+
+    --sidebar-accent: hsl(240 4.8% 95.9%);
+
+    --sidebar-accent-foreground: hsl(240 5.9% 10%);
+
+    --sidebar-border: hsl(220 13% 91%);
+
+    --sidebar-ring: hsl(217.2 91.2% 59.8%);
+}
+
+@theme inline {
+    --font-obritron-sans: var(--font-orbitron);
+
+    --font-kubmh-sans: var(--font-kumbh);
+
+    --animate-marquee: marquee 20s linear infinite;
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
 }
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-    --font-obritron-sans: var(--font-orbitron);
+    /* Color Variables for  Primary */
+    --color-very-dark-blue: var(--very-dark-blue);
 
-    --color-very-dark-blue: var(--ecommerce-very-dark-blue);
-    --color-dark-grayish-blue: var(--ecommerce-dark-grayish-blue);
-    --color-very-dark-blue: var(--ecommerce-very-dark-blue);
-    --color-dark-grayish-blue: var(--ecommerce-dark-grayish-blue);
+    --color-dark-grayish-blue: var(--dark-grayish-blue);
+
+    --color-very-dark-blue: var(--very-dark-blue);
+
+    --color-dark-grayish-blue: var(--dark-grayish-blue);
+
+    /* Color Variables for Sidebar */
+    --color-sidebar-ring: var(--sidebar-ring);
+
+    --color-sidebar-border: var(--sidebar-border);
+
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+
+    --color-sidebar-accent: var(--sidebar-accent);
+
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+
+    --color-sidebar-primary: var(--sidebar-primary);
+
+    --color-sidebar-foreground: var(--sidebar-foreground);
+
+    --color-sidebar: var(--sidebar);
 }
 
-/* Challenges Custom Tailwind Variables */
 @theme inline {
-    --font-kumbh-sans: var(--font-kumbh-sans);
-
-    /* 01_ECOMMERCE_PRODUCT_PAGE-[Challenges] */
-    --color-ecommerce-primary-orange: var(--ecommerce-primary-orange);
-    --color-ecommerce-primary-pale-orange: var(--ecommerce-primary-pale-orange);
-
-    /* Neutral Colors */
-    --color-ecommerce-very-dark-blue: var(--ecommerce-very-dark-blue);
-    --color-ecommerce-dark-grayish-blue: var(--ecommerce-dark-grayish-blue);
-    --color-ecommerce-grayish-blue: var(--ecommerce-grayish-blue);
-    --color-ecommerce-light-grayish-blue: var(--ecommerce-light-grayish-blue);
-    --color-ecommerce-white: var(--ecommerce-white);
-    /* with 75% opacity for lightbox background */
-    --color-ecommerce-black: var(--ecommerce-black);
-
-}
-
-@theme inline {
-
     --radius-sm: calc(var(--radius) - 4px);
 
     --radius-md: calc(var(--radius) - 2px);

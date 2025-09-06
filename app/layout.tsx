@@ -4,7 +4,7 @@ import './globals.css';
 
 const kumbhSans = localFont({
     src: '../public/fonts/kumbh_sans/KumbhSans_VariableFont.ttf',
-    variable: '--font-kumbh-sans',
+    variable: '--font-kumbh',
 });
 
 const orbitron = localFont({
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en">
-            <body className={`${kumbhSans.variable} ${orbitron.variable} h-screen antialiased`}>
+            <body className={`${kumbhSans.variable} ${orbitron.variable} min-h-screen antialiased`}>
                 {children}
             </body>
         </html>

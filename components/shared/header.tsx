@@ -29,7 +29,7 @@ export function Header() {
                 <ul className="flex flex-col items-start justify-start gap-5 px-2 md:flex-row md:py-4">
                     <li>
                         <Link className="cursor-pointer hover:underline hover:underline-offset-[0.75rem]" href="#">
-                            About Me
+                            About
                         </Link>
                     </li>
                     <li>

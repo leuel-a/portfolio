@@ -1,0 +1,11 @@
+[
+    {
+        "title": "Software Engineer",
+        "duration": "Jun 2024 - Present",
+        "description": [
+            "Built core features for three React Native mobile apps and designed RESTful APIs with Node.js, Express, and MongoDB for web and mobile clients.",
+            "Developed a production-grade admin panel using react-admin and optimized it by reducing redundant API calls, improving page load performance by ~10%.",
+            "Collaborated in an Agile team, adapting to evolving requirements through Scrum practices."
+        ]
+    }
+]
