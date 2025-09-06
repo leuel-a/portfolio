@@ -1,12 +1,12 @@
-import { Header } from '@/components/shared/header';
+import {Header} from '@/components/shared/header';
 import {Footer} from '@/components/blocks/footer';
 
-export default function SiteLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function SiteLayout({children}: Readonly<{children: React.ReactNode}>) {
     return (
-        <div className="bg-very-dark-blue text-white h-full font-kubmh-sans w-full">
+        <div className="h-full w-full bg-very-dark-blue font-kubmh-sans text-white">
             <Header />
             {children}
-            <Footer/>
+            <Footer />
         </div>
-    )
+    );
 }
