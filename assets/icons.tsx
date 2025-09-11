@@ -1,7 +1,11 @@
 import type {SVGProps} from 'react';
 
 export const CIcon = (props: SVGProps<SVGSVGElement>) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        {...props}
+    >
         <title>C</title>
         <path
             fill="currentColor"
@@ -11,7 +15,11 @@ export const CIcon = (props: SVGProps<SVGSVGElement>) => (
 );
 
 export const ReactIcon = (props: SVGProps<SVGSVGElement>) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        {...props}
+    >
         <title>React</title>
         <path
             fill="currentColor"
@@ -21,7 +29,11 @@ export const ReactIcon = (props: SVGProps<SVGSVGElement>) => (
 );
 
 export const LangchainIcon = (props: SVGProps<SVGSVGElement>) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        {...props}
+    >
         <title>LangChain</title>
         <path
             fill="currentColor"
@@ -31,7 +43,11 @@ export const LangchainIcon = (props: SVGProps<SVGSVGElement>) => (
 );
 
 export const NextIcon = (props: SVGProps<SVGSVGElement>) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        {...props}
+    >
         <title>Next.js</title>
         <path
             fill="currentColor"
@@ -41,7 +57,12 @@ export const NextIcon = (props: SVGProps<SVGSVGElement>) => (
 );
 
 export const UpworkIcon = (props: SVGProps<SVGSVGElement>) => (
-    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <svg
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        {...props}
+    >
         <title>Upwork</title>
         <path
             fill="currentColor"

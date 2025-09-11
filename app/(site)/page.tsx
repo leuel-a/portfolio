@@ -5,8 +5,8 @@ import {Experiences} from '@/components/pages/home/experiences';
 
 export default function Home() {
     return (
-        <div className="mx-auto max-w-[80rem] px-6 pt-10 md:px-4">
-            <div className="grid grid-cols-1 place-items-center md:gap-8 md:grid-cols-2">
+        <div className="mx-auto h-full max-w-[80rem] bg-inherit px-6 pt-10 md:px-4">
+            <div className="grid grid-cols-1 place-items-center md:grid-cols-2 md:gap-8">
                 <div className="flex flex-col gap-10">
                     <div className="flex flex-col gap-6">
                         <h1 className="text-xl">Hi, I am Leuel</h1>

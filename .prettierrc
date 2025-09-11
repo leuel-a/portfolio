@@ -5,6 +5,7 @@
     "bracketSpacing": false,
     "arrowParens": "always",
     "printWidth": 150,
+    "singleAttributePerLine": true,
     "tailwindStylesheet": "./app/globals.css",
     "plugins": ["prettier-plugin-tailwindcss"]
 }

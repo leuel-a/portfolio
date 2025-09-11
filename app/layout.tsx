@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
     return (
         <html lang="en">
-            <body className={`${kumbhSans.variable} ${orbitron.variable} min-h-screen bg-very-dark-blue antialiased`}>{children}</body>
+            <body className={`${kumbhSans.variable} ${orbitron.variable} h-screen antialiased`}>{children}</body>
         </html>
     );
 }

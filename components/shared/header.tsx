@@ -27,14 +27,17 @@ export function Header() {
     return (
         <header
             className={cn(
-                'sticky top-0 z-50 mx-auto flex h-20 max-w-[80rem] items-center justify-between px-4 pt-10',
+                'sticky top-0 z-50 flex h-20 w-[min(100%,80rem)] items-center justify-between px-4 pt-10',
                 isScrolled ? 'bg-dark-grayish-blue/90' : '',
             )}
         >
             <div className="fixed top-8 z-50 md:static">
                 <h1 className={cn('text-2xl tracking-widest italic', isScrolled ? 'font-bold text-very-dark-blue' : '')}>LA</h1>
             </div>
-            <button className="fixed top-8 right-4 z-50 cursor-pointer md:hidden" onClick={toggleHeader}>
+            <button
+                className="fixed top-8 right-4 z-50 cursor-pointer md:hidden"
+                onClick={toggleHeader}
+            >
                 {headerOpen ? (
                     <X className={cn(isScrolled ? 'text-very-dark-blue' : '')} />
                 ) : (
@@ -50,13 +53,19 @@ export function Header() {
             >
                 <ul className="flex flex-col items-start justify-start gap-5 px-2 md:flex-row md:py-4">
                     <li>
-                        <Link className="cursor-pointer hover:underline hover:underline-offset-[0.75rem]" href="#projects">
+                        <Link
+                            className="cursor-pointer hover:underline hover:underline-offset-[0.75rem]"
+                            href="#projects"
+                        >
                             <span className="mr-2">01</span>
                             Projects
                         </Link>
                     </li>
                     <li>
-                        <Link className="cursor-pointer hover:underline hover:underline-offset-[0.75rem]" href="#experience">
+                        <Link
+                            className="cursor-pointer hover:underline hover:underline-offset-[0.75rem]"
+                            href="#experience"
+                        >
                             <span className="mr-2">02</span>
                             Experience
                         </Link>
