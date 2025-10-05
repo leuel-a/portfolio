@@ -1,0 +1,27 @@
+name: Deploy Site
+on:
+    push:
+        branches: [main]
+jobs:
+    build-deploy:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+        steps:
+            - uses: actions/checkout@v4
+
+            - uses: actions/setup-node@v4
+              with:
+                node-version: 20
+
+            - name: Install dependencies
+              run: npm ci # npm clean install
+
+            - name: Build site
+              run: npm run build
+
+            - name: Deploy to Github Pages 
+              uses: peaceiris/actions-gh-pages@v4
+              with:
+                github_token: ${{ secrets.GITHUB_TOKEN }}
+                publish_dir: ./dist
