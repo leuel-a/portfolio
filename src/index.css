@@ -31,3 +31,21 @@
         animation: grow-width 1s ease-out forwards;
     }
 }
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(45deg);
+        opacity: 0.1;
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}

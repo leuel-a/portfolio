@@ -17,7 +17,8 @@ export function Hero() {
     };
 
     return (
-        <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-2">
+        <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-20">
+            {/* Glass Break Background */}
             <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-500/10 via-transparent to-blue-500/10" />
                 <div className="absolute top-1/4 left-1/4 h-96 w-96 animate-pulse rounded-full bg-cyan-500/5 blur-3xl" />
@@ -25,21 +26,24 @@ export function Hero() {
             </div>
 
             <div className="relative z-10 mx-auto max-w-4xl text-center">
+                {/* Vim Quote */}
                 <div className="animate-fade-in mb-8">
                     <p className="text-lg font-light text-slate-400 italic">
                         "Editing with Vim is like having a conversation with your code"
                     </p>
                 </div>
 
+                {/* Main Heading */}
                 <h1
                     className="animate-fade-in mb-6 text-5xl font-bold md:text-7xl"
                     style={{animationDelay: '200ms'}}
                 >
                     <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-                        ልኡል አስፋው
+                        Leuel Asfaw
                     </span>
                 </h1>
 
+                {/* Subtitle */}
                 <p
                     className="animate-fade-in mb-8 text-xl text-slate-300 md:text-2xl"
                     style={{animationDelay: '400ms'}}
@@ -47,6 +51,7 @@ export function Hero() {
                     Full-Stack Developer & AI Engineer
                 </p>
 
+                {/* Description */}
                 <div
                     className="animate-fade-in mx-auto mb-12 max-w-2xl"
                     style={{animationDelay: '600ms'}}
@@ -61,6 +66,7 @@ export function Hero() {
                     </p>
                 </div>
 
+                {/* Tech Stack Icons */}
                 <div
                     className="animate-fade-in mb-12 flex items-center justify-center gap-8"
                     style={{animationDelay: '800ms'}}
@@ -108,13 +114,14 @@ export function Hero() {
                     </div>
                 </div>
 
+                {/* Action Buttons */}
                 <div
                     className="animate-fade-in flex flex-col items-center justify-center gap-4 sm:flex-row"
                     style={{animationDelay: '1200ms'}}
                 >
                     <button
                         onClick={handleContact}
-                        className="cursor-pointer group flex items-center gap-3 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25"
+                        className="group flex items-center gap-3 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25"
                     >
                         Get In Touch
                         <svg
@@ -134,7 +141,7 @@ export function Hero() {
 
                     <button
                         onClick={handleUpwork}
-                        className="group cursor-pointer flex items-center gap-3 rounded-2xl border border-slate-600 px-8 py-4 font-semibold text-slate-300 transition-all duration-300 hover:scale-105 hover:border-cyan-400 hover:text-cyan-400"
+                        className="group flex items-center gap-3 rounded-2xl border border-slate-600 px-8 py-4 font-semibold text-slate-300 transition-all duration-300 hover:scale-105 hover:border-cyan-400 hover:text-cyan-400"
                     >
                         <SiUpwork className="h-5 w-5" />
                         Upwork Profile
@@ -142,6 +149,7 @@ export function Hero() {
                 </div>
             </div>
 
+            {/* Scroll Indicator */}
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 transform animate-bounce">
                 <div className="flex h-10 w-6 justify-center rounded-full border-2 border-slate-400">
                     <div className="mt-2 h-3 w-1 rounded-full bg-slate-400" />

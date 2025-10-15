@@ -1,0 +1,101 @@
+{
+  "user": {
+    "login": "leuel-a",
+    "id": 105054376,
+    "node_id": "U_kgDOBkMAqA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/105054376?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/leuel-a",
+    "html_url": "https://github.com/leuel-a",
+    "followers_url": "https://api.github.com/users/leuel-a/followers",
+    "following_url": "https://api.github.com/users/leuel-a/following{/other_user}",
+    "gists_url": "https://api.github.com/users/leuel-a/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/leuel-a/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/leuel-a/subscriptions",
+    "organizations_url": "https://api.github.com/users/leuel-a/orgs",
+    "repos_url": "https://api.github.com/users/leuel-a/repos",
+    "events_url": "https://api.github.com/users/leuel-a/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/leuel-a/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false,
+    "name": "Leuel Asfaw",
+    "company": null,
+    "blog": "",
+    "location": null,
+    "email": null,
+    "hireable": null,
+    "bio": null,
+    "twitter_username": null,
+    "notification_email": null,
+    "public_repos": 10,
+    "public_gists": 0,
+    "followers": 5,
+    "following": 10,
+    "created_at": "2022-05-06T11:47:32Z",
+    "updated_at": "2025-09-18T09:56:02Z"
+  },
+  "languages": [
+    [
+      "TypeScript",
+      91
+    ],
+    [
+      "Vim Script",
+      3
+    ],
+    [
+      "Jupyter Notebook",
+      3
+    ],
+    [
+      "Python",
+      2
+    ],
+    [
+      "Go",
+      1
+    ],
+    [
+      "Makefile",
+      1
+    ],
+    [
+      "HTML",
+      1
+    ],
+    [
+      "JavaScript",
+      1
+    ],
+    [
+      "CSS",
+      1
+    ],
+    [
+      "Mako",
+      1
+    ],
+    [
+      "Lua",
+      1
+    ],
+    [
+      "Shell",
+      1
+    ],
+    [
+      "Dockerfile",
+      1
+    ],
+    [
+      "C++",
+      1
+    ]
+  ],
+  "stats": {
+    "totalRepositories": 10,
+    "totalLanguages": 14,
+    "fetchedAt": "2025-10-15T06:12:15.416Z"
+  }
+}
