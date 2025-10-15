@@ -14,19 +14,37 @@ export function Header() {
                 <ul className="hidden gap-8 text-lg md:flex">
                     <li>
                         <a
-                            href="#"
+                            href="#about"
                             className="group relative text-slate-300 transition-colors duration-200 hover:text-white"
                         >
-                            Blog
+                            About
                             <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300 group-hover:w-full" />
                         </a>
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href="#projects"
                             className="group relative text-slate-300 transition-colors duration-200 hover:text-white"
                         >
                             Projects
+                            <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300 group-hover:w-full" />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#frameworks"
+                            className="group relative text-slate-300 transition-colors duration-200 hover:text-white"
+                        >
+                            Frameworks
+                            <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300 group-hover:w-full" />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#languages"
+                            className="group relative text-slate-300 transition-colors duration-200 hover:text-white"
+                        >
+                            What do I use?
                             <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300 group-hover:w-full" />
                         </a>
                     </li>
@@ -52,18 +70,32 @@ export function Header() {
                     <div className="animate-fade-in absolute top-20 left-0 w-full border-b border-slate-800 bg-slate-900/95 backdrop-blur-md md:hidden">
                         <div className="space-y-4 px-6 py-4">
                             <a
-                                href="#"
+                                href="#about"
                                 className="block border-l-2 border-transparent py-2 text-lg text-slate-300 transition-all transition-colors duration-200 hover:border-cyan-400 hover:pl-4 hover:text-white"
                                 onClick={() => setIsMenuOpen(false)}
                             >
-                                Blog
+                                About
                             </a>
                             <a
-                                href="#"
+                                href="#projects"
                                 className="block border-l-2 border-transparent py-2 text-lg text-slate-300 transition-all transition-colors duration-200 hover:border-cyan-400 hover:pl-4 hover:text-white"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Projects
+                            </a>
+                            <a
+                                href="#languages"
+                                className="block border-l-2 border-transparent py-2 text-lg text-slate-300 transition-all transition-colors duration-200 hover:border-cyan-400 hover:pl-4 hover:text-white"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                What do I use?
+                            </a>
+                            <a
+                                href="#frameworks"
+                                className="block border-l-2 border-transparent py-2 text-lg text-slate-300 transition-all transition-colors duration-200 hover:border-cyan-400 hover:pl-4 hover:text-white"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                Frameworks
                             </a>
                         </div>
                     </div>

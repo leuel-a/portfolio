@@ -13,13 +13,13 @@ const projects = [
 
 export function Projects() {
     return (
-        <section>
+        <section id="projects">
             <div className="mb-12 text-center">
                 <h2 className="mb-4 text-2xl font-light text-slate-300">Featured Projects</h2>
                 <div className="mx-auto h-px w-24 bg-gradient-to-r from-transparent via-cyan-400 to-transparent" />
             </div>
 
-            <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8">
+            <div className="grid max-w-4xl grid-cols-1 gap-8">
                 {projects.map((project, index) => (
                     <div
                         key={project.name}

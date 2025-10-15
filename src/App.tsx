@@ -8,9 +8,9 @@ function App() {
             <Hero />
             <main className="mx-auto w-full max-w-7xl flex-1 space-y-16 px-6 py-12">
                 <About />
+                <Projects />
                 <ProgrammingLanguages />
                 <Frameworks />
-                <Projects />
             </main>
             <Footer />
         </div>

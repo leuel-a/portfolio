@@ -14,24 +14,32 @@ export function Footer() {
                         </p>
                     </div>
 
-                    <div className="flex flex-col gap-8 text-center sm:flex-row">
+                    <div className="flex flex-col gap-8 sm:flex-row">
                         <div>
                             <h3 className="mb-4 font-semibold text-slate-300">Navigation</h3>
                             <ul className="space-y-2">
                                 <li>
                                     <a
-                                        href="#"
+                                        href="#about"
                                         className="text-sm text-slate-400 transition-colors duration-200 hover:text-cyan-400"
                                     >
-                                        Blog
+                                        About
                                     </a>
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
+                                        href="#projects"
                                         className="text-sm text-slate-400 transition-colors duration-200 hover:text-cyan-400"
                                     >
                                         Projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#frameworks"
+                                        className="text-sm text-slate-400 transition-colors duration-200 hover:text-cyan-400"
+                                    >
+                                        Frameworks
                                     </a>
                                 </li>
                             </ul>
@@ -42,7 +50,7 @@ export function Footer() {
                             <ul className="space-y-2">
                                 <li>
                                     <a
-                                        href="https://github.com"
+                                        href="https://github.com/leuel-a"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-sm text-slate-400 transition-colors duration-200 hover:text-cyan-400"
@@ -62,7 +70,7 @@ export function Footer() {
                                 </li>
                                 <li>
                                     <a
-                                        href="mailto:hello@leuel.com"
+                                        href="mailto:hello@leuel.asfaw@gmailcom"
                                         className="text-sm text-slate-400 transition-colors duration-200 hover:text-cyan-400"
                                     >
                                         Email

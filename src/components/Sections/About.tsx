@@ -58,8 +58,7 @@ export function About() {
     ];
 
     return (
-        <section className="relative py-16">
-            {/* Animated Vim Cursor */}
+        <section id="about" className="relative py-16">
             <div
                 className="absolute w-3 h-5 bg-cyan-400 rounded-sm opacity-80 z-0 transition-all duration-3000 ease-in-out"
                 style={{
@@ -70,7 +69,6 @@ export function About() {
             />
 
             <div className="relative z-10 max-w-6xl mx-auto px-6">
-                {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-2xl font-light text-slate-300 mb-4">
                         About Me
@@ -79,9 +77,7 @@ export function About() {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-                    {/* Left Column - Personal Info */}
                     <div className="lg:col-span-1 space-y-8">
-                        {/* Name & Basic Info */}
                         <div>
                             <h1 className="text-2xl font-light text-slate-100 mb-2">
                                 Leuel A. Gebreselassie
@@ -93,7 +89,6 @@ export function About() {
                             </div>
                         </div>
 
-                        {/* Social Links */}
                         <div>
                             <h3 className="text-sm font-medium text-slate-300 mb-3 uppercase tracking-wider">
                                 Connect
@@ -126,7 +121,6 @@ export function About() {
                             </div>
                         </div>
 
-                        {/* Technical Skills */}
                         <div>
                             <h3 className="text-sm font-medium text-slate-300 mb-3 uppercase tracking-wider">
                                 Core Technologies
@@ -142,9 +136,7 @@ export function About() {
                         </div>
                     </div>
 
-                    {/* Right Column - Content */}
                     <div className="lg:col-span-2 space-y-8">
-                        {/* Overview */}
                         <div>
                             <h3 className="text-lg font-medium text-slate-200 mb-4">
                                 Software Engineer & Competitive Programmer
@@ -161,7 +153,6 @@ export function About() {
                             </p>
                         </div>
 
-                        {/* Experience */}
                         <div>
                             <h3 className="text-lg font-medium text-slate-200 mb-4">
                                 Professional Experience
@@ -192,7 +183,6 @@ export function About() {
                             </div>
                         </div>
 
-                        {/* Education */}
                         <div>
                             <h3 className="text-lg font-medium text-slate-200 mb-4">
                                 Education

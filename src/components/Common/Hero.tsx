@@ -28,8 +28,8 @@ export function Hero() {
             <div className="relative z-10 mx-auto max-w-4xl text-center">
                 {/* Vim Quote */}
                 <div className="animate-fade-in mb-8">
-                    <p className="text-lg font-light text-slate-400 italic">
-                        "Editing with Vim is like having a conversation with your code"
+                    <p className="text-sm md:text-lg font-light text-slate-400 italic">
+                        "Mastering Vim is like learning to play an instrument — awkward at first, beautiful later."
                     </p>
                 </div>
 
@@ -39,7 +39,7 @@ export function Hero() {
                     style={{animationDelay: '200ms'}}
                 >
                     <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-                        Leuel Asfaw
+                        ልኡል አስፋው
                     </span>
                 </h1>
 

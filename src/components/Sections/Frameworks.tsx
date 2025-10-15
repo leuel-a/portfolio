@@ -21,7 +21,7 @@ const frameworks = [
 
 export function Frameworks() {
     return (
-        <section>
+        <section id="frameworks">
             <div className="mb-12 text-center">
                 <h2 className="mb-4 text-center text-2xl font-light text-slate-300">
                     Frameworks & Technologies

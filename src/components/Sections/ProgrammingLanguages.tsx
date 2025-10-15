@@ -4,7 +4,7 @@ import data from '../../../output/github-user-data-latest.json';
 
 export function ProgrammingLanguages() {
     return (
-        <section>
+        <section id="languages">
             <div className="mb-8 text-center">
                 <h2 className="mb-2 text-2xl font-light text-slate-300">
                     Programming Languages I Use
